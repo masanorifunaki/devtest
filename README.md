@@ -1,3 +1,15 @@
+* 初期設定
+```
+mkdir フォルダ名 # フォルダを作る
+cd フォルダ名 # 作ったフォルダへ移動する
+git clone git@github.com:masanorifunaki/devtest.git # クローンする
+npm install # npmをインストールする
+git checkout # ブランチを変更する
+```
+# 運用フロー
+* ブランチを切って作業する。
+* masterブランチはマージ専用にする。
+* 作業完了後、masterブランチに対してプルリクエストを送る
 # CSS JS ファイルの読み込み方法
 ```
 style
