@@ -11,7 +11,7 @@ git checkout # ブランチを変更する
 * masterブランチはマージ専用にする。
 * 作業完了後、masterブランチに対してプルリクエストを送る
 # Jadeの使い方について
-以下参照 \n
+以下参照  
 [Jade について。](https://gist.github.com/japboy/5402844)
 ## CSS JS ファイルの読み込み方法
 ```
