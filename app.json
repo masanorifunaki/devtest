@@ -1,0 +1,8 @@
+{
+  "name": "tkaneda",
+  "description": "tkaneda",
+  "repository": "git@github.com:masanorifunaki/devtest.git",
+  "logo": "",
+  "keywords": ["node"],
+  "image": "heroku/nodejs"
+}
