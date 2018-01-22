@@ -33,12 +33,12 @@
     removeAllChildren(tweetDivided);
     const anchor = document.createElement('a');
     const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=' +
-      encodeURIComponent('あなたのいいところ') +
+      encodeURIComponent('あなたのニックネーム') +
       '&ref_src=twsrc%5Etfw';
     anchor.setAttribute('href', hrefValue);
     anchor.className = 'twitter-hashtag-button';
     anchor.setAttribute('data-text', result);
-    anchor.innerText = '#あなたのいいところ をツイートする';
+    anchor.innerText = '#あなたのニックネーム をツイートする';
     tweetDivided.appendChild(anchor);
 
     twttr.widgets.load();
@@ -60,7 +60,7 @@
     let nickname = nicknameList[Math.floor(Math.random() * nicknameList.length)];
 
     return nickname;
-  }
+  };
 
 
   /*
@@ -71,7 +71,7 @@
     while (element.firstChild) { // 子どもの要素があるかぎり削除
       element.removeChild(element.firstChild);
     }
-  }
+  };
 
   /**end==================== 関数 ====================*/
 
