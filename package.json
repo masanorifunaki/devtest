@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/masanorifunaki/devtest#readme",
   "dependencies": {
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "jquery": "^3.3.1"
   },
   "engines": {
     "node": "6.11.1"
