@@ -4,16 +4,23 @@ html(lang="ja")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title あなたのいいところ診断
-    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
-    style
-      include ../css/style.css
-  body
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css", integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous")
+    link(rel="stylesheet", href="./css/style.css")
+  body.container
     h1 あなたのいいところは？
     p 診断したい名前を入れて下さい
-    input(type="text" id="user-name" size="40" maxlength="20")
-    button#assessment 診断する
-    div#result-area
+    form.form-inline
+      div.form-group
+        input(type="text" id="user-name" class="form-control" maxlength="20")
+      button#assessment.btn.btn-primary 診断する
+    div#result-area.panel-body
     div#tweet-area
       script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
+    //- script(src="../js/assessment.js")
+    script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js",
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS",
+    crossorigin="anonymous")
     script
       include ../js/assessment.js
